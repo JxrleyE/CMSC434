@@ -1,0 +1,8 @@
+.device {
+  margin:auto; 
+  width: 640px;
+  height: 960px;
+  overflow: hidden;
+  background-color: powderblue;
+  position: relative;
+}
