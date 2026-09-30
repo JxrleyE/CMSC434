@@ -3,7 +3,7 @@
   width: 640px;
   height: 960px;
   overflow: hidden;
-  background-color: rgb(74, 133, 131);
+  background-color: #2F4F46;
   position: relative;
 }
 
@@ -14,6 +14,7 @@
     width: 100%;
 }
 
+/* Scroll feature */
 .scroll {
     height: 860px;
     overflow: auto;
@@ -56,6 +57,7 @@
   text-align: left;
 }
 
+/* For botton right text */
 .BR {
     position: absolute;
     bottom: 90px;
