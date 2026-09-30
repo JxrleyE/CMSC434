@@ -3,6 +3,40 @@
   width: 640px;
   height: 960px;
   overflow: hidden;
-  background-color: powderblue;
+  background-color: rgb(74, 133, 131);
   position: relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #87ae73;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 16.66%;
+  padding: 24px 16px
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: left;
 }
