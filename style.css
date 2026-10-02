@@ -57,10 +57,127 @@
   text-align: left;
 }
 
+/* Choices screen */
+#Choices fieldset {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid #c1d2bd;
+}
+
+#Choices form > label,
+#Choices select,
+#Choices button {
+  display: block;
+  margin-top: 12px;
+}
+
+#Choices select,
+#Choices button {
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+#Choices button {
+  border: 0;
+  background-color: #87ae73;
+  color: white;
+  cursor: grab;
+  transition: transform 0.1s ease;
+}
+#Choices button:active {
+  transform: scale(0.96);
+  cursor: grabbing;
+}
+
+#choicesResult {
+  min-height: 1.5em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 /* For botton right text */
 .BR {
     position: absolute;
     bottom: 90px;
     right: 0;
     padding: 10px 20px;
+}
+
+#Colors {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.color-line-one {
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.color-line-two {
+    color: purple;
+    background-color: yellow;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+#Colors h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.profile-name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#Profile {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#Profile h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profile-content {
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.warning {
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.close-warning {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
 }

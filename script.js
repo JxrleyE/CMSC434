@@ -61,3 +61,20 @@ new Chart(ctx, {
       }
     }
 });
+
+function showWarning() {
+    document.getElementById("profile-warning").style.display = "flex";
+}
+
+function closeWarning() {
+    document.getElementById("profile-warning").style.display = "none";
+}
+
+// choices form submission logic
+document.getElementById("choicesForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var camera = document.querySelector('input[name="camera"]:checked').value;
+  var lens = document.getElementById("lensSelection").value;
+  document.getElementById("choicesResult").textContent =
+    "Your setup: " + camera + ", with " + lens + " lens.";
+});
