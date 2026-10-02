@@ -11,3 +11,11 @@ function openCity(tab) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+function showWarning() {
+    document.getElementById("profile-warning").style.display = "flex";
+}
+
+function closeWarning() {
+    document.getElementById("profile-warning").style.display = "none";
+}

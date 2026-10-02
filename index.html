@@ -33,11 +33,32 @@
         </div>
 
          <div id="Colors" class="tabcontent">
-            <!-- IMPLEMENT HERE -->
+           <h1>Colors</h1>
+
+            <p class="color-line-one">Yellow text on black</p>
+
+            <p class="color-line-two">Purple text on yellow</p>
+
+    
         </div>
 
         <div id="Profile" class="tabcontent">
-            <!-- IMPLEMENT HERE -->
+            <h1>User Profile</h1>
+
+            <div class="profile-content">
+                <img src="icons/SmileyFace.png"
+                    class="profile-image"
+                    onclick="showWarning()">
+
+                <p class="profile-name">Smiley</p>
+            </div>
+
+            <div id="profile-warning" class="warning">
+                <span>
+                    <strong>Warning!</strong> Do not click on the profile image.
+                </span>
+                <button class="close-warning" onclick="closeWarning()">×</button>
+            </div>
         </div>
 
         <div id="Choices" class="tabcontent">
