@@ -87,7 +87,40 @@
         </div>
 
       <div id="ToDo" class="tabcontent">
-        <!-- IMPLEMENT HERE -->
+        <h2>ToDo List</h2>
+        <input id="task" placeholder="Enter a task">
+        <button onclick="addTask()">Add</button>
+        <ul id="list"></ul>
+        
+        <script>
+        function addTask() {
+            let input = document.getElementById("task");
+            if (input.value.trim() === "") return;
+        
+            let item = document.createElement("li");
+            item.textContent = input.value + " ";
+        
+            let done = document.createElement("button");
+            done.textContent = "Cross Off";
+            done.onclick = function() {
+                item.style.textDecoration =
+                    item.style.textDecoration === "line-through"
+                    ? "none" : "line-through";
+            };
+        
+            let deleteItem = document.createElement("button");
+            del.textContent = "Delete";
+            del.onclick = function() {
+                item.remove();
+            };
+        
+            item.appendChild(done);
+            item.appendChild(del);
+            document.getElementById("list").appendChild(item);
+        
+            input.value = "";
+        }
+        </script>
       </div>
 
       <div class="footer">
