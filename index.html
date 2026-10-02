@@ -62,7 +62,25 @@
         </div>
 
         <div id="Choices" class="tabcontent">
-           <!-- IMPLEMENT HERE -->
+            <h1>-Choices Screen-</h1>
+            <form id="choicesForm">
+                <fieldset>
+                    <legend>Choose a Camera</legend>
+                    <label><input type="radio" name="camera" value="Canon EOS R10" checked> Canon EOS R10</label>
+                    <label><input type="radio" name="camera" value="Fuji xt30 III"> Fuji xt30 III</label>
+                    <label><input type="radio" name="camera" value="Sony a6400"> Sony a6400</label>
+                </fieldset>
+
+                <label for="lensSelection">Select lens</label>
+                <select id="lensSelection" name="lensSelection">
+                    <option value="24-70mm">24-70mm</option>
+                    <option value="70-200mm">70-200mm</option>
+                    <option value="35mmPrime">35mm Prime</option>
+                </select>
+
+                <button type="submit">Show my choices</button>
+                <p id="choicesResult" aria-live="polite"></p>
+            </form>
         </div>
 
         <div id="ToDo" class="tabcontent">
